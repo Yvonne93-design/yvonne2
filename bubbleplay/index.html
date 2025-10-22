@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Touch the Weather — Prototype</title>
+  <style>
+    html,body{height:100%;margin:0;background:#111;color:#eee;font-family:system-ui,Segoe UI,Helvetica,Arial}
+    #controls{position:fixed;left:12px;top:12px;z-index:20;background:rgba(0,0,0,0.35);padding:8px;border-radius:8px}
+    #credits{position:fixed;right:12px;bottom:12px;font-size:12px;color:#bbb}
+    canvas{display:block}
+    button,select{font-size:14px;margin:4px}
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label>月份: <select id="monthSelect"></select></label>
+    <button id="exportBtn">导出 PNG</button>
+    <div id="info" style="margin-top:6px;font-size:12px;color:#ddd"></div>
+  </div>
+
+  <div id="credits">数据来源: 香港天文台（示例数据） • 原型: Touch the Weather</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
